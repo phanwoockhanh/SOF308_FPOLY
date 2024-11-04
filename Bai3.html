@@ -24,8 +24,8 @@
         <!-- Tab panes -->
         <div class="tab-content" id="myTabContent">
             <!-- Form Đăng ký -->
-            <div class="tab-pane fade show active" id="register"  aria-labelledby="register-tab">
-                <form class="mt-4">
+            <div class="tab-pane fade show active p-3" id="register"  aria-labelledby="register-tab">
+                <form class="border px-3 py-4 rounded">
                     <div class="form-group mb-3">
                         <label for="name">Họ và Tên</label>
                         <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên" required>
@@ -46,8 +46,9 @@
                         <label for="confirm-password">Xác nhận mật khẩu</label>
                         <input type="password" class="form-control" id="confirm-password" placeholder="Xác nhận mật khẩu" required>
                     </div>
+
                     <div class="form-group mb-3">
-                        <label>Giới tính :</label>
+                        <label>Giới tính</label>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
                             <label class="form-check-label" for="male">Nam</label>
@@ -57,6 +58,7 @@
                             <label class="form-check-label" for="female">Nữ</label>
                         </div>
                     </div>
+
                     <div class="form-group mb-3">
                         <label for="language">Ngôn ngữ</label>
                         <select class="form-control" id="language" required>
@@ -77,18 +79,19 @@
 
             <!-- Form Đăng nhập -->
             <div class="tab-pane fade" id="login"  aria-labelledby="login-tab">
-                <form class="mt-4">
-                    <div class="form-group mb-3">
-                        <label for="login-email">Email</label>
-                        <input type="email" class="form-control" id="login-email" placeholder="Nhập email" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="login-password">Mật khẩu</label>
-                        <input type="password" class="form-control" id="login-password" placeholder="Nhập mật khẩu" required>
-                    </div> 
-                    
-                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
-                </form>
+                    <h3 class="mb-4 mt-4">Form Đăng Nhập</h3>
+                    <form class="border px-3 py-4 rounded">
+                        <div class="form-group mb-3">
+                            <label for="login-email">Email</label>
+                            <input type="email" class="form-control" id="login-email" placeholder="Nhập email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="login-password">Mật khẩu</label>
+                            <input type="password" class="form-control" id="login-password" placeholder="Nhập mật khẩu" required>
+                        </div> 
+                        
+                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                    </form>
             </div>
         </div>
     </div>
